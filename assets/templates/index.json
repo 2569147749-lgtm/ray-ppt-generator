@@ -1,0 +1,1854 @@
+{
+  "version": 1,
+  "templates": [
+    {
+      "id": "yellow-editorial",
+      "name": "Yellow Editorial",
+      "path": "yellow-editorial",
+      "scheme": "light",
+      "colors": [
+        "yellow",
+        "warm-white",
+        "ink"
+      ],
+      "mood": [
+        "confident",
+        "editorial",
+        "clear",
+        "energetic"
+      ],
+      "density": [
+        "speaker-led",
+        "balanced"
+      ],
+      "bestFor": [
+        "product introductions",
+        "project showcases",
+        "strategy presentations",
+        "interview portfolios",
+        "business proposals"
+      ],
+      "avoidFor": [
+        "formal financial statements",
+        "medical or legal evidence packs",
+        "image-led luxury portfolios"
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json",
+      "preview": "preview.png"
+    },
+    {
+      "id": "8-bit-orbit",
+      "name": "8-Bit Orbit",
+      "path": "8-bit-orbit",
+      "source": "beautiful-html-templates",
+      "scheme": "dark",
+      "colors": [
+        "neon-pink",
+        "neon-cyan",
+        "neon-yellow",
+        "deep-navy",
+        "void",
+        "lavender"
+      ],
+      "mood": [
+        "retro-tech",
+        "playful",
+        "cyberpunk",
+        "energetic",
+        "geeky",
+        "neon",
+        "rebellious",
+        "sci-fi"
+      ],
+      "density": [
+        "balanced"
+      ],
+      "bestFor": [
+        "gaming pitch",
+        "hackathon demo",
+        "web3 / crypto deck",
+        "indie product launch",
+        "developer tools",
+        "synthwave brand"
+      ],
+      "avoidFor": [
+        "Contexts where the dark neon palette would actively work against the message — quiet institutional finance disclosures, healthcare patient-facing materials, traditional luxury."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json"
+    },
+    {
+      "id": "biennale-yellow",
+      "name": "Biennale Yellow",
+      "path": "biennale-yellow",
+      "source": "beautiful-html-templates",
+      "scheme": "light",
+      "colors": [
+        "paper",
+        "ink",
+        "sun",
+        "ember",
+        "haze"
+      ],
+      "mood": [
+        "editorial",
+        "atmospheric",
+        "warm",
+        "cultural-institution",
+        "poster-like",
+        "literary",
+        "considered",
+        "contemplative",
+        "warm-modern",
+        "Dutch-editorial"
+      ],
+      "density": [
+        "balanced"
+      ],
+      "bestFor": [
+        "exhibition or biennale",
+        "arts institution programme",
+        "design or typography conference",
+        "literary or curatorial publication",
+        "studio annual report",
+        "museum season announcement"
+      ],
+      "avoidFor": [
+        "Decks that need visual punch or saturated multi-color energy — the warm-paper canvas and one-yellow palette are intentionally quiet and atmospheric."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json"
+    },
+    {
+      "id": "block-frame",
+      "name": "BlockFrame",
+      "path": "block-frame",
+      "source": "beautiful-html-templates",
+      "scheme": "light",
+      "colors": [
+        "pink",
+        "blue",
+        "green",
+        "yellow",
+        "cream",
+        "black",
+        "offwhite"
+      ],
+      "mood": [
+        "bold",
+        "playful",
+        "graphic",
+        "fresh",
+        "confident",
+        "pop",
+        "design-led"
+      ],
+      "density": [
+        "dense"
+      ],
+      "bestFor": [
+        "creative agency pitch",
+        "indie SaaS launch",
+        "designer portfolio",
+        "brand redesign",
+        "modern startup deck"
+      ],
+      "avoidFor": [
+        "Contexts that require quiet institutional restraint or traditional weight (regulated disclosures, formal legal briefs)."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json"
+    },
+    {
+      "id": "blue-professional",
+      "name": "Blue Professional",
+      "path": "blue-professional",
+      "source": "beautiful-html-templates",
+      "scheme": "light",
+      "colors": [
+        "bg",
+        "primary",
+        "text",
+        "text-muted"
+      ],
+      "mood": [
+        "professional",
+        "modern",
+        "calm",
+        "trustworthy",
+        "clean",
+        "considered",
+        "polished",
+        "neutral"
+      ],
+      "density": [
+        "balanced"
+      ],
+      "bestFor": [
+        "B2B SaaS pitch",
+        "consulting deliverable",
+        "internal review",
+        "advisory pitch",
+        "investor update"
+      ],
+      "avoidFor": [
+        "Contexts where the deck should feel hot, playful, or intentionally informal — the cool electric-blue restraint will read as overly polished."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json"
+    },
+    {
+      "id": "bold-poster",
+      "name": "Bold Poster",
+      "path": "bold-poster",
+      "source": "beautiful-html-templates",
+      "scheme": "light",
+      "colors": [
+        "bg",
+        "dark",
+        "red",
+        "light"
+      ],
+      "mood": [
+        "bold",
+        "editorial",
+        "loud",
+        "confident",
+        "dramatic",
+        "graphic",
+        "sharp",
+        "intentional"
+      ],
+      "density": [
+        "speaker-led"
+      ],
+      "bestFor": [
+        "brand manifesto",
+        "creative-led pitch",
+        "magazine / editorial",
+        "founder vision deck",
+        "art / culture"
+      ],
+      "avoidFor": [
+        "Decks that need to communicate dense information per slide — the layout is built around a few large statements, not paragraphs of detail."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json"
+    },
+    {
+      "id": "broadside",
+      "name": "Broadside",
+      "path": "broadside",
+      "source": "beautiful-html-templates",
+      "scheme": "dark",
+      "colors": [
+        "bg",
+        "bg-alt",
+        "fg",
+        "accent",
+        "border",
+        "muted"
+      ],
+      "mood": [
+        "editorial",
+        "dramatic",
+        "loud",
+        "newspaper",
+        "graphic",
+        "punchy",
+        "literary",
+        "considered"
+      ],
+      "density": [
+        "balanced"
+      ],
+      "bestFor": [
+        "brand manifesto",
+        "founder vision deck",
+        "magazine / cultural pitch",
+        "design talk",
+        "bilingual EN/CN deck",
+        "campaign launch"
+      ],
+      "avoidFor": [
+        "Decks that need to feel quiet, warm, or institutionally traditional — the dark canvas with fire-orange accent commits to drama."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json"
+    },
+    {
+      "id": "capsule",
+      "name": "Capsule",
+      "path": "capsule",
+      "source": "beautiful-html-templates",
+      "scheme": "light",
+      "colors": [
+        "bg",
+        "fg",
+        "coral",
+        "lime",
+        "lavender",
+        "sky",
+        "violet",
+        "yellow",
+        "peach",
+        "mint"
+      ],
+      "mood": [
+        "playful",
+        "modern",
+        "warm",
+        "fresh",
+        "fun",
+        "upbeat",
+        "graphic",
+        "approachable",
+        "cool"
+      ],
+      "density": [
+        "balanced"
+      ],
+      "bestFor": [
+        "lifestyle brand",
+        "creator portfolio",
+        "DTC product launch",
+        "wellness or beauty pitch",
+        "Y2K-tinged brand work"
+      ],
+      "avoidFor": [
+        "Contexts that require traditional institutional weight — the capsule shapes and pastel pops actively soften authority."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json"
+    },
+    {
+      "id": "cartesian",
+      "name": "Cartesian",
+      "path": "cartesian",
+      "source": "beautiful-html-templates",
+      "scheme": "light",
+      "colors": [
+        "bg-primary",
+        "bg-secondary",
+        "text-primary",
+        "text-secondary",
+        "accent",
+        "line"
+      ],
+      "mood": [
+        "quiet",
+        "considered",
+        "elegant",
+        "warm-minimal",
+        "classical",
+        "literary",
+        "restrained",
+        "confident-quiet"
+      ],
+      "density": [
+        "speaker-led"
+      ],
+      "bestFor": [
+        "investment thesis",
+        "white paper",
+        "advisory deliverable",
+        "research report",
+        "book / longform pitch",
+        "gallery / cultural"
+      ],
+      "avoidFor": [
+        "Decks that need visual heat, multiple accents, or a sense of urgency — the warm-neutral palette is intentionally low-energy."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json"
+    },
+    {
+      "id": "cobalt-grid",
+      "name": "Cobalt Grid",
+      "path": "cobalt-grid",
+      "source": "beautiful-html-templates",
+      "scheme": "light",
+      "colors": [
+        "paper",
+        "ink",
+        "ink-soft",
+        "grid"
+      ],
+      "mood": [
+        "editorial",
+        "design-research",
+        "studious",
+        "modernist",
+        "tech-print",
+        "monochrome",
+        "considered",
+        "literary",
+        "quietly-modern"
+      ],
+      "density": [
+        "balanced"
+      ],
+      "bestFor": [
+        "design trend or research report",
+        "studio annual or seasonal bulletin",
+        "creative agency capabilities deck",
+        "art or architecture publication",
+        "academic / curatorial publication",
+        "newsletter or zine pitch"
+      ],
+      "avoidFor": [
+        "Decks that need warmth, multi-colour energy, or a casual / playful voice — the strict cobalt + cream + grid palette is intentionally austere."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json"
+    },
+    {
+      "id": "coral",
+      "name": "Coral",
+      "path": "coral",
+      "source": "beautiful-html-templates",
+      "scheme": "mixed",
+      "colors": [
+        "coral",
+        "coral-dark",
+        "cream",
+        "cream-dark",
+        "ink",
+        "gray"
+      ],
+      "mood": [
+        "bold",
+        "warm",
+        "modern",
+        "confident",
+        "graphic",
+        "punchy",
+        "magazine"
+      ],
+      "density": [
+        "balanced"
+      ],
+      "bestFor": [
+        "fashion / beauty pitch",
+        "fitness brand",
+        "F&B brand deck",
+        "lifestyle launch",
+        "creative agency"
+      ],
+      "avoidFor": [
+        "Contexts that should feel quiet or institutional — the coral accent and oversized Bebas Neue commit hard to a confident magazine voice."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json"
+    },
+    {
+      "id": "creative-mode",
+      "name": "Creative Mode",
+      "path": "creative-mode",
+      "source": "beautiful-html-templates",
+      "scheme": "light",
+      "colors": [
+        "cream",
+        "cream-2",
+        "green",
+        "pink",
+        "orange",
+        "yellow",
+        "ink"
+      ],
+      "mood": [
+        "creative",
+        "confident",
+        "playful",
+        "design-led",
+        "graphic",
+        "expressive",
+        "modern"
+      ],
+      "density": [
+        "balanced",
+        "dense"
+      ],
+      "bestFor": [
+        "creative agency pitch",
+        "design studio deck",
+        "ad shop credentials",
+        "brand creative review",
+        "concept presentation"
+      ],
+      "avoidFor": [
+        "Contexts that demand institutional restraint and a quiet authority — the saturated multi-accent palette will read as expressive, not formal."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json",
+      "runtimeFiles": [
+        "deck-stage.js"
+      ]
+    },
+    {
+      "id": "daisy-days",
+      "name": "Daisy Days",
+      "path": "daisy-days",
+      "source": "beautiful-html-templates",
+      "scheme": "light",
+      "colors": [
+        "cream",
+        "turquoise",
+        "soft-pink",
+        "butter",
+        "mint",
+        "lavender",
+        "peach",
+        "sky",
+        "coral",
+        "ink"
+      ],
+      "mood": [
+        "cheerful",
+        "playful",
+        "warm",
+        "sunny",
+        "wholesome",
+        "friendly",
+        "soft",
+        "encouraging",
+        "approachable",
+        "lighthearted"
+      ],
+      "density": [
+        "balanced"
+      ],
+      "bestFor": [
+        "education / classroom",
+        "kids product launch",
+        "wellness program",
+        "community workshop",
+        "creator portfolio (craft / illustration)",
+        "team kickoff",
+        "wedding / baby shower planning"
+      ],
+      "avoidFor": [
+        "Contexts where the audience explicitly expects authority and precision — the hand-drawn pastel SVG decorations are the opposite of buttoned-up."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json"
+    },
+    {
+      "id": "editorial-forest",
+      "name": "Editorial Forest",
+      "path": "editorial-forest",
+      "source": "beautiful-html-templates",
+      "scheme": "mixed",
+      "colors": [
+        "forest-green",
+        "pink",
+        "cream",
+        "ink"
+      ],
+      "mood": [
+        "editorial",
+        "quiet",
+        "considered",
+        "warm",
+        "intentional",
+        "literary",
+        "thoughtful",
+        "low-pressure"
+      ],
+      "density": [
+        "balanced"
+      ],
+      "bestFor": [
+        "quarterly review",
+        "internal readout",
+        "studio update",
+        "creative agency deck",
+        "research recap"
+      ],
+      "avoidFor": [
+        "Contexts that need to feel urgent, punchy, or sales-driven — the palette and rhythm are intentionally quiet."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json",
+      "runtimeFiles": [
+        "deck-stage.js"
+      ]
+    },
+    {
+      "id": "editorial-tri-tone",
+      "name": "Editorial Tri-Tone",
+      "path": "editorial-tri-tone",
+      "source": "beautiful-html-templates",
+      "scheme": "mixed",
+      "colors": [
+        "pink",
+        "cream-yellow",
+        "burgundy"
+      ],
+      "mood": [
+        "editorial",
+        "warm",
+        "intentional",
+        "moody",
+        "literary",
+        "considered",
+        "stylish"
+      ],
+      "density": [
+        "balanced"
+      ],
+      "bestFor": [
+        "editorial / magazine pitch",
+        "fashion brand deck",
+        "lifestyle media",
+        "literary / cultural",
+        "art direction review"
+      ],
+      "avoidFor": [
+        "Decks that need to read as soft or comforting — the burgundy/pink/cream tri-tone is intentionally high-contrast and styled."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json",
+      "runtimeFiles": [
+        "deck-stage.js"
+      ]
+    },
+    {
+      "id": "emerald-editorial",
+      "name": "Emerald Editorial",
+      "path": "emerald-editorial",
+      "source": "beautiful-html-templates",
+      "scheme": "mixed",
+      "colors": [
+        "emerald",
+        "navy",
+        "paper"
+      ],
+      "mood": [
+        "editorial",
+        "considered",
+        "confident",
+        "magazine-cover",
+        "literary",
+        "authoritative",
+        "warm",
+        "designed"
+      ],
+      "density": [
+        "balanced"
+      ],
+      "bestFor": [
+        "leadership presentation",
+        "quarterly review",
+        "strategy readout",
+        "planning office deck",
+        "executive briefing"
+      ],
+      "avoidFor": [
+        "Contexts that need to read as quiet, neutral, or institutionally restrained — the emerald field is too saturated to disappear into the background."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json",
+      "runtimeFiles": [
+        "deck-stage.js"
+      ]
+    },
+    {
+      "id": "grove",
+      "name": "Grove",
+      "path": "grove",
+      "source": "beautiful-html-templates",
+      "scheme": "mixed",
+      "colors": [
+        "bg",
+        "bg-alt",
+        "fg",
+        "accent",
+        "bg-light"
+      ],
+      "mood": [
+        "organic",
+        "considered",
+        "warm",
+        "literary",
+        "natural",
+        "classical",
+        "patient"
+      ],
+      "density": [
+        "balanced"
+      ],
+      "bestFor": [
+        "sustainability brand",
+        "wellness brand",
+        "outdoor / nature product",
+        "winery or restaurant",
+        "literary or arts deck",
+        "advisory deliverable",
+        "bilingual EN/CN deck"
+      ],
+      "avoidFor": [
+        "Decks that need neon energy or rapid-fire pop — the forest-green canvas and Playfair serif commit to a slow, classical voice."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json"
+    },
+    {
+      "id": "long-table",
+      "name": "Long Table",
+      "path": "long-table",
+      "source": "beautiful-html-templates",
+      "scheme": "light",
+      "colors": [
+        "paper",
+        "ink",
+        "ink-deep"
+      ],
+      "mood": [
+        "warm",
+        "intimate",
+        "modern",
+        "friendly",
+        "small-batch",
+        "social",
+        "hospitality",
+        "playful",
+        "considered",
+        "magazine-friendly",
+        "modern-editorial"
+      ],
+      "density": [
+        "balanced"
+      ],
+      "bestFor": [
+        "supper club or dinner series",
+        "event or community gathering",
+        "small hospitality / restaurant brand",
+        "creative studio open house",
+        "membership or subscription pitch",
+        "wine or food brand catalogue",
+        "modern lifestyle brand"
+      ],
+      "avoidFor": [
+        "Decks that need corporate polish, technical density, or a cold / minimalist register — the rust-red palette and bold serif mix are intentionally warm and people-facing."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json"
+    },
+    {
+      "id": "mat",
+      "name": "Mat",
+      "path": "mat",
+      "source": "beautiful-html-templates",
+      "scheme": "mixed",
+      "colors": [
+        "bg",
+        "bg-alt",
+        "fg",
+        "accent",
+        "bg-light",
+        "wood"
+      ],
+      "mood": [
+        "warm-modern",
+        "considered",
+        "tactile",
+        "mid-century",
+        "warm",
+        "design-led",
+        "intentional"
+      ],
+      "density": [
+        "balanced"
+      ],
+      "bestFor": [
+        "design studio credentials",
+        "architecture / interior brand",
+        "ceramics or craft brand",
+        "furniture pitch",
+        "advisory deliverable",
+        "bilingual EN/CN deck"
+      ],
+      "avoidFor": [
+        "Contexts that need fast tech energy or institutional restraint — the muted sage and burnt-orange palette is intentionally warm and slow."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json"
+    },
+    {
+      "id": "monochrome",
+      "name": "Monochrome",
+      "path": "monochrome",
+      "source": "beautiful-html-templates",
+      "scheme": "light",
+      "colors": [
+        "bg",
+        "bg-alt",
+        "bg-cream",
+        "fg",
+        "fg-2"
+      ],
+      "mood": [
+        "restrained",
+        "literary",
+        "archival",
+        "ledger",
+        "considered",
+        "neutral",
+        "honest"
+      ],
+      "density": [
+        "dense"
+      ],
+      "bestFor": [
+        "user research synthesis",
+        "white paper",
+        "longform report",
+        "academic deck",
+        "policy brief",
+        "advisory deliverable",
+        "bilingual EN/CN deck"
+      ],
+      "avoidFor": [
+        "Decks that need visual personality or color-led storytelling — the all-ink palette is intentionally austere."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json"
+    },
+    {
+      "id": "neo-grid-bold",
+      "name": "Neo-Grid Bold",
+      "path": "neo-grid-bold",
+      "source": "beautiful-html-templates",
+      "scheme": "light",
+      "colors": [
+        "off-white",
+        "ink",
+        "neon-yellow"
+      ],
+      "mood": [
+        "confident",
+        "punchy",
+        "editorial",
+        "modern"
+      ],
+      "density": [
+        "dense"
+      ],
+      "bestFor": [
+        "product launches",
+        "design reviews",
+        "founder pitches",
+        "brand decks",
+        "consulting findings",
+        "conference talks"
+      ],
+      "avoidFor": [
+        "quiet traditional reports",
+        "warm relationship-heavy decks",
+        "legal evidence packs"
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json",
+      "runtimeFiles": [
+        "deck-stage.js"
+      ]
+    },
+    {
+      "id": "peoples-platform",
+      "name": "People's Platform (Block & Bold)",
+      "path": "peoples-platform",
+      "source": "beautiful-html-templates",
+      "scheme": "light",
+      "colors": [
+        "blue",
+        "orange",
+        "red",
+        "cream",
+        "ink"
+      ],
+      "mood": [
+        "activist",
+        "loud",
+        "graphic",
+        "honest",
+        "punchy",
+        "direct",
+        "expressive",
+        "warm-bold"
+      ],
+      "density": [
+        "balanced",
+        "dense"
+      ],
+      "bestFor": [
+        "cultural commentary",
+        "manifesto",
+        "community / civic deck",
+        "design talk",
+        "campaign pitch",
+        "founder vision"
+      ],
+      "avoidFor": [
+        "Contexts where institutional restraint is the actual goal — the saturated political-poster palette commits hard to expressive energy."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json",
+      "runtimeFiles": [
+        "deck-stage.js"
+      ]
+    },
+    {
+      "id": "pin-and-paper",
+      "name": "Pin & Paper",
+      "path": "pin-and-paper",
+      "source": "beautiful-html-templates",
+      "scheme": "light",
+      "colors": [
+        "paper",
+        "cream",
+        "ink",
+        "red"
+      ],
+      "mood": [
+        "crafted",
+        "handmade",
+        "warm",
+        "thoughtful",
+        "literary",
+        "intimate",
+        "grounded"
+      ],
+      "density": [
+        "balanced"
+      ],
+      "bestFor": [
+        "research findings with personality",
+        "qualitative report",
+        "founder reflection",
+        "creator essay deck",
+        "workshop debrief"
+      ],
+      "avoidFor": [
+        "Decks that need to feel digital-native polished or rigorously data-driven — handwritten Caveat is intentionally informal."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json",
+      "runtimeFiles": [
+        "deck-stage.js"
+      ]
+    },
+    {
+      "id": "pink-script",
+      "name": "Pink Script — After Hours",
+      "path": "pink-script",
+      "source": "beautiful-html-templates",
+      "scheme": "dark",
+      "colors": [
+        "ink",
+        "paper",
+        "pink",
+        "pink-2",
+        "pink-deep"
+      ],
+      "mood": [
+        "nocturnal",
+        "moody",
+        "intentional",
+        "luxe",
+        "expressive",
+        "literary",
+        "sultry",
+        "considered",
+        "magazine"
+      ],
+      "density": [
+        "speaker-led"
+      ],
+      "bestFor": [
+        "fashion brand deck",
+        "creator personal brand",
+        "after-hours product (nightlife / dating / spirits)",
+        "luxury launch",
+        "editorial feature"
+      ],
+      "avoidFor": [
+        "Daytime corporate-professional and traditional B2B contexts where the dark canvas with hot-pink accent reads as too styled or too expressive."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json",
+      "runtimeFiles": [
+        "deck-stage.js"
+      ]
+    },
+    {
+      "id": "playful",
+      "name": "Playful",
+      "path": "playful",
+      "source": "beautiful-html-templates",
+      "scheme": "light",
+      "colors": [
+        "bg",
+        "bg-alt",
+        "text",
+        "light"
+      ],
+      "mood": [
+        "warm",
+        "approachable",
+        "indie",
+        "friendly",
+        "upbeat",
+        "informal",
+        "welcoming"
+      ],
+      "density": [
+        "balanced"
+      ],
+      "bestFor": [
+        "creator portfolio",
+        "indie product launch",
+        "lifestyle brand",
+        "small-business pitch",
+        "newsletter / community"
+      ],
+      "avoidFor": [
+        "Contexts where institutional credibility matters more than warmth — the peach palette is intentionally informal."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json"
+    },
+    {
+      "id": "raw-grid",
+      "name": "Raw Grid",
+      "path": "raw-grid",
+      "source": "beautiful-html-templates",
+      "scheme": "light",
+      "colors": [
+        "primary",
+        "ink",
+        "pink",
+        "green",
+        "gray"
+      ],
+      "mood": [
+        "raw",
+        "punchy",
+        "energetic",
+        "confident",
+        "direct",
+        "modern",
+        "no-nonsense",
+        "graphic"
+      ],
+      "density": [
+        "dense"
+      ],
+      "bestFor": [
+        "startup pitch",
+        "accelerator demo day",
+        "founder pitch",
+        "indie product launch",
+        "brand deck",
+        "creator portfolio"
+      ],
+      "avoidFor": [
+        "Contexts that need to feel soft, warm, or intentionally quiet — the brutalist borders and offset shadows commit to a graphic voice."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json"
+    },
+    {
+      "id": "retro-windows",
+      "name": "Retro Windows",
+      "path": "retro-windows",
+      "source": "beautiful-html-templates",
+      "scheme": "light",
+      "colors": [
+        "bg-gray",
+        "bg-light",
+        "blue-navy",
+        "blue-light",
+        "white",
+        "black"
+      ],
+      "mood": [
+        "nostalgic",
+        "retro",
+        "geeky",
+        "playful",
+        "winking",
+        "fun"
+      ],
+      "density": [
+        "balanced"
+      ],
+      "bestFor": [
+        "retro gaming pitch",
+        "Y2K brand",
+        "creator portfolio (90s aesthetic)",
+        "tech-history talk",
+        "shitpost-but-make-it-fancy deck"
+      ],
+      "avoidFor": [
+        "Decks that need to read as modern, elegant, or institutionally credible — the Win95 chrome will always read as a costume."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json"
+    },
+    {
+      "id": "retro-zine",
+      "name": "Retro Zine",
+      "path": "retro-zine",
+      "source": "beautiful-html-templates",
+      "scheme": "light",
+      "colors": [
+        "bg",
+        "bg-dark",
+        "green",
+        "green-light",
+        "black",
+        "white"
+      ],
+      "mood": [
+        "crafted",
+        "lo-fi",
+        "underground",
+        "warm-retro",
+        "scrappy",
+        "warm",
+        "intentional",
+        "DIY"
+      ],
+      "density": [
+        "balanced"
+      ],
+      "bestFor": [
+        "indie zine / publication",
+        "music or arts brand",
+        "creator portfolio",
+        "small-batch / craft launch",
+        "cultural / community deck"
+      ],
+      "avoidFor": [
+        "Contexts that demand digital-native polish or fast modern-tech energy — the layered zine aesthetic intentionally feels handmade."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json"
+    },
+    {
+      "id": "sakura-chroma",
+      "name": "Sakura Chroma",
+      "path": "sakura-chroma",
+      "source": "beautiful-html-templates",
+      "scheme": "light",
+      "colors": [
+        "paper",
+        "ink",
+        "red",
+        "pink",
+        "orange",
+        "yellow",
+        "green",
+        "blue"
+      ],
+      "mood": [
+        "retro",
+        "playful",
+        "kawaii-tech",
+        "warm",
+        "tactile",
+        "product-catalogue",
+        "confident",
+        "80s-Japanese-tech"
+      ],
+      "density": [
+        "balanced"
+      ],
+      "bestFor": [
+        "product launch or catalogue",
+        "indie hardware or analog studio brand",
+        "music label or release schedule",
+        "creative studio annual report",
+        "magazine or zine pitch",
+        "vintage-flavored brand campaign"
+      ],
+      "avoidFor": [
+        "Decks that need restrained, corporate, or quiet typography — the bold condensed lockups, ribbon stripes, and primary-colour palette are intentionally loud and product-page-y."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json"
+    },
+    {
+      "id": "scatterbrain",
+      "name": "Scatterbrain",
+      "path": "scatterbrain",
+      "source": "beautiful-html-templates",
+      "scheme": "light",
+      "colors": [
+        "yellow",
+        "blue",
+        "pink",
+        "green",
+        "orange",
+        "purple",
+        "paper",
+        "ink"
+      ],
+      "mood": [
+        "playful",
+        "creative",
+        "warm",
+        "messy-on-purpose",
+        "workshop",
+        "informal",
+        "expressive",
+        "human"
+      ],
+      "density": [
+        "dense"
+      ],
+      "bestFor": [
+        "brainstorm / workshop",
+        "creative agency credentials",
+        "design-thinking session",
+        "ideation pitch",
+        "art-direction review"
+      ],
+      "avoidFor": [
+        "Contexts that demand precision and institutional weight — the post-it sticky-note aesthetic intentionally reads as warm and unfinished."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json"
+    },
+    {
+      "id": "signal",
+      "name": "Signal",
+      "path": "signal",
+      "source": "beautiful-html-templates",
+      "scheme": "mixed",
+      "colors": [
+        "bg",
+        "bg-alt",
+        "fg",
+        "accent",
+        "bg-light"
+      ],
+      "mood": [
+        "institutional",
+        "trustworthy",
+        "considered",
+        "weighty",
+        "sober",
+        "polished",
+        "established",
+        "literary"
+      ],
+      "density": [
+        "dense"
+      ],
+      "bestFor": [
+        "investor deck",
+        "consulting deliverable",
+        "board presentation",
+        "legal / policy brief",
+        "academic deck",
+        "advisory pitch",
+        "bilingual EN/CN deck"
+      ],
+      "avoidFor": [
+        "Contexts that should feel hot, fast, or intentionally playful — the navy + gold restraint commits to a sober voice."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json"
+    },
+    {
+      "id": "soft-editorial",
+      "name": "Soft Editorial",
+      "path": "soft-editorial",
+      "source": "beautiful-html-templates",
+      "scheme": "light",
+      "colors": [
+        "paper",
+        "ink",
+        "pink",
+        "lemon",
+        "blush",
+        "sage"
+      ],
+      "mood": [
+        "literary",
+        "elegant",
+        "quiet",
+        "warm-classical",
+        "considered",
+        "warm",
+        "magazine"
+      ],
+      "density": [
+        "speaker-led"
+      ],
+      "bestFor": [
+        "editorial feature",
+        "longform brand story",
+        "gallery or museum",
+        "literary pitch",
+        "advisory deliverable",
+        "wedding / lifestyle media"
+      ],
+      "avoidFor": [
+        "Decks that need visual heat or punch — the warm-paper palette and Cormorant serif are intentionally quiet."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json",
+      "runtimeFiles": [
+        "deck-stage.js"
+      ]
+    },
+    {
+      "id": "stencil-tablet",
+      "name": "Stencil & Tablet",
+      "path": "stencil-tablet",
+      "source": "beautiful-html-templates",
+      "scheme": "light",
+      "colors": [
+        "bone",
+        "ink",
+        "paper",
+        "sienna",
+        "magenta",
+        "orange",
+        "teal",
+        "blue",
+        "olive"
+      ],
+      "mood": [
+        "archival",
+        "earthy",
+        "tactile",
+        "considered",
+        "graphic",
+        "weighty",
+        "literary"
+      ],
+      "density": [
+        "balanced"
+      ],
+      "bestFor": [
+        "museum / cultural institution",
+        "art / architecture brand",
+        "longform research",
+        "heritage / craft brand",
+        "manifesto"
+      ],
+      "avoidFor": [
+        "Contexts that demand digital-native polish or playful pop — the stencil-cut display and earth-tone palette commit to a deliberate analog feel."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json",
+      "runtimeFiles": [
+        "deck-stage.js"
+      ]
+    },
+    {
+      "id": "studio",
+      "name": "Studio",
+      "path": "studio",
+      "source": "beautiful-html-templates",
+      "scheme": "dark",
+      "colors": [
+        "bg",
+        "bg-alt",
+        "fg",
+        "accent",
+        "bg-light"
+      ],
+      "mood": [
+        "electric",
+        "bold",
+        "graphic",
+        "design-led",
+        "high-contrast",
+        "loud",
+        "modern",
+        "intentional"
+      ],
+      "density": [
+        "balanced"
+      ],
+      "bestFor": [
+        "design studio credentials",
+        "creative agency pitch",
+        "brand showcase",
+        "art-direction review",
+        "fashion / sneaker brand",
+        "bilingual EN/CN deck"
+      ],
+      "avoidFor": [
+        "Contexts that should feel quiet or institutional — the black-and-electric-yellow palette is the loudest in the library."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json"
+    },
+    {
+      "id": "vellum",
+      "name": "Vellum",
+      "path": "vellum",
+      "source": "beautiful-html-templates",
+      "scheme": "dark",
+      "colors": [
+        "bg",
+        "bg-alt",
+        "fg",
+        "accent"
+      ],
+      "mood": [
+        "scholarly",
+        "literary",
+        "considered",
+        "quiet",
+        "intellectual",
+        "patient",
+        "intelligent"
+      ],
+      "density": [
+        "speaker-led"
+      ],
+      "bestFor": [
+        "research findings",
+        "white paper or longform report",
+        "academic or university deck",
+        "advisory deliverable",
+        "literary or editorial pitch",
+        "founder reflection / vision deck",
+        "bilingual EN/CN deck"
+      ],
+      "avoidFor": [
+        "Contexts that need visual heat or pop — the navy + warm-yellow Cormorant aesthetic is intentionally low-tempo."
+      ],
+      "layouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ],
+      "template": "template.html",
+      "design": "design.md",
+      "contracts": "layout-contracts.json",
+      "emphasisPlan": "emphasis-plan.json"
+    }
+  ]
+}

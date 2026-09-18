@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ray PPT Generator Semantic Emphasis Plan",
+  "type": "object",
+  "required": ["decisions"],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "status": {
+      "enum": ["review-required", "passed", "failed"]
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "slide",
+          "role",
+          "text",
+          "category",
+          "rationale",
+          "source",
+          "priority",
+          "treatments"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "slide": {
+            "type": "string",
+            "minLength": 1
+          },
+          "role": {
+            "type": "string",
+            "minLength": 1
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "category": {
+            "enum": [
+              "user-request",
+              "core-conclusion",
+              "key-metric",
+              "decision-action",
+              "contrast"
+            ]
+          },
+          "rationale": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source": {
+            "enum": ["inferred", "user"]
+          },
+          "priority": {
+            "enum": ["primary", "secondary"]
+          },
+          "treatments": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "enum": ["bold", "enlarge", "color", "highlight"]
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "review": {
+      "type": ["object", "null"]
+    }
+  },
+  "additionalProperties": false
+}

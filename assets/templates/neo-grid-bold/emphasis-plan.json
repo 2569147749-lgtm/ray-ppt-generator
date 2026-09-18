@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-18T00:00:00.000Z",
+  "status": "passed",
+  "decisions": [
+    {
+      "id": "stats-numbers",
+      "slide": "stats",
+      "role": "title",
+      "text": "numbers",
+      "category": "key-metric",
+      "rationale": "This word names the quantitative framing of the slide and is already carried by the template's neon highlight treatment.",
+      "source": "inferred",
+      "priority": "primary",
+      "treatments": [
+        "highlight"
+      ]
+    },
+    {
+      "id": "section-modern-money",
+      "slide": "section-vision",
+      "role": "title",
+      "text": "modern money",
+      "category": "core-conclusion",
+      "rationale": "This phrase is the concluding idea of the section-divider statement and should remain the only highlighted phrase in that headline.",
+      "source": "inferred",
+      "priority": "primary",
+      "treatments": [
+        "highlight"
+      ]
+    }
+  ],
+  "review": {
+    "reviewer": "template semantic review",
+    "reviewedAt": "2026-09-18T00:00:00.000Z",
+    "decisions": [
+      {
+        "id": "stats-numbers",
+        "checks": {
+          "relevance": "pass",
+          "context": "pass",
+          "restraint": "pass"
+        },
+        "notes": "The highlighted word is concise, central to the slide's metric framing, and does not over-highlight the full headline."
+      },
+      {
+        "id": "section-modern-money",
+        "checks": {
+          "relevance": "pass",
+          "context": "pass",
+          "restraint": "pass"
+        },
+        "notes": "The phrase is the central section claim, remains understandable in context, and limits emphasis to one short span."
+      }
+    ]
+  }
+}

@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 1,
+  "template": "yellow-editorial",
+  "deckCommands": ["add-slide", "delete-slide", "move-slide", "split-slide"],
+  "semanticCommands": ["replace-image"],
+  "imageAdaptation": {
+    "defaultFit": "contain",
+    "supportedFits": ["contain", "cover"],
+    "layoutRole": "media-layout",
+    "frameClass": "media-frame",
+    "copyClass": "media-copy",
+    "variants": {
+      "portrait": { "maxAspectRatio": 0.9, "mediaColumns": "1.35fr 0.75fr" },
+      "square": { "maxAspectRatio": 1.15, "mediaColumns": "1fr 1fr" },
+      "landscape-standard": { "maxAspectRatio": 1.5, "mediaColumns": "0.8fr 1.2fr" },
+      "landscape-wide": { "maxAspectRatio": null, "mediaColumns": "0.65fr 1.55fr" }
+    }
+  },
+  "styleConsistency": {
+    "allowedFontFamilies": ["DM Sans", "Noto Sans SC", "Noto Serif SC"],
+    "typographyByRole": {
+      "title": {
+        "fontFamilies": ["DM Sans", "Noto Serif SC"],
+        "fontWeights": [400, 700]
+      },
+      "item-title": {
+        "fontFamilies": ["DM Sans", "Noto Sans SC"],
+        "fontWeights": [700]
+      },
+      "item-body": {
+        "fontFamilies": ["DM Sans", "Noto Sans SC"],
+        "fontWeights": [400]
+      }
+    },
+    "allowedColors": ["#ffda24", "#fffef8", "#20211d", "#696a62", "#d8d8ce"],
+    "slideInsets": {
+      "left": 88,
+      "right": 88,
+      "top": 64,
+      "bottom": 70,
+      "tolerance": 2
+    },
+    "footer": {
+      "required": true,
+      "left": 88,
+      "right": 88,
+      "bottom": 44,
+      "fontSize": 18,
+      "tolerance": 2
+    },
+    "titleByLayout": {
+      "cover": { "min": 100, "max": 154 },
+      "statement": { "min": 60, "max": 91 },
+      "agenda": { "min": 52, "max": 76 },
+      "metric": { "min": 52, "max": 76 },
+      "comparison": { "min": 52, "max": 76 },
+      "process": { "min": 52, "max": 76 },
+      "decision-matrix": { "min": 52, "max": 76 },
+      "closing": { "min": 88, "max": 131 }
+    },
+    "outlierExemptLayouts": ["cover", "closing"]
+  },
+  "typographyQuality": {
+    "default": {
+      "minFontSize": 18,
+      "minLineHeightRatio": 1.15,
+      "maxLines": 8,
+      "maxLineCharacters": 42,
+      "orphanMinCharacters": 2
+    },
+    "roleRules": {
+      "title": {
+        "minFontSize": 52,
+        "minLineHeightRatio": 1.1,
+        "maxLines": 3,
+        "maxLineCharacters": 28,
+        "orphanMinCharacters": 2
+      },
+      "item-title": {
+        "minFontSize": 28,
+        "minLineHeightRatio": 1.15,
+        "maxLines": 2,
+        "maxLineCharacters": 18,
+        "orphanMinCharacters": 2
+      },
+      "item-body": {
+        "minFontSize": 20,
+        "minLineHeightRatio": 1.3,
+        "maxLines": 4,
+        "maxLineCharacters": 28,
+        "orphanMinCharacters": 2
+      }
+    }
+  },
+  "imageQuality": {
+    "maxUpscaleWarning": 1,
+    "maxUpscaleBlocker": 1.5,
+    "maxAspectDistortion": 0.03,
+    "minCoverVisibleFraction": 0.65
+  },
+  "layoutQuality": {
+    "balance": {
+      "centerX": [0.15, 0.85],
+      "centerY": [0.15, 0.85],
+      "coverage": [0.15, 0.75],
+      "exemptLayouts": ["cover", "closing"]
+    },
+    "repeatedGroupsByLayout": {
+      "agenda": {
+        "orientation": "vertical",
+        "gapTolerance": 8,
+        "crossAxisTolerance": 8
+      },
+      "process": {
+        "orientation": "horizontal",
+        "gapTolerance": 8,
+        "crossAxisTolerance": 8
+      }
+    }
+  },
+  "chartQuality": {
+    "supportedTypes": ["bar"],
+    "requiredTitle": true,
+    "requiredSource": true,
+    "requiredPointLabels": true,
+    "bar": {
+      "requireZeroBaseline": true,
+      "widthTolerance": 0.03,
+      "requireLabels": true
+    }
+  },
+  "semanticVisualQuality": {
+    "layoutRules": {
+      "cover": {
+        "allowedIntents": ["opening"],
+        "requiredSignals": ["text"],
+        "primaryRoles": ["title"]
+      },
+      "statement": {
+        "allowedIntents": ["key-message"],
+        "requiredSignals": ["text"],
+        "primaryRoles": ["title"]
+      },
+      "agenda": {
+        "allowedIntents": ["structure-overview"],
+        "requiredSignals": ["text", "items"],
+        "primaryRoles": ["title"]
+      },
+      "metric": {
+        "allowedIntents": ["quantitative-comparison"],
+        "requiredSignals": ["text", "number", "chart"],
+        "primaryRoles": ["metric"]
+      },
+      "comparison": {
+        "allowedIntents": ["categorical-comparison"],
+        "requiredSignals": ["text", "items"],
+        "primaryRoles": ["title"]
+      },
+      "process": {
+        "allowedIntents": ["process"],
+        "requiredSignals": ["text", "items"],
+        "primaryRoles": ["title"]
+      },
+      "decision-matrix": {
+        "allowedIntents": ["prioritization"],
+        "requiredSignals": ["text", "items"],
+        "primaryRoles": ["title"]
+      },
+      "closing": {
+        "allowedIntents": ["call-to-action"],
+        "requiredSignals": ["text"],
+        "primaryRoles": ["title"]
+      }
+    }
+  },
+  "accessibilityQuality": {
+    "minContrastNormal": 4.5,
+    "minContrastLarge": 3,
+    "largeTextMin": 24,
+    "largeBoldTextMin": 18.66,
+    "minTextSize": 16,
+    "requireSlideLabel": true,
+    "requireImageAlt": true,
+    "requireRedundantColorLabels": true
+  },
+  "layoutSelection": {
+    "templateSlideIds": [
+      "cover",
+      "point-of-view",
+      "framework",
+      "metrics",
+      "comparison",
+      "workflow",
+      "decision-matrix",
+      "closing"
+    ],
+    "layouts": {
+      "cover": {
+        "narrativeRoles": ["opening"],
+        "contentShapes": ["single-message"],
+        "density": "speaker-led",
+        "preferredItems": { "min": 0, "max": 0 },
+        "styleTreatment": "aperture-opening",
+        "prototypeSlide": "cover"
+      },
+      "statement": {
+        "narrativeRoles": ["context", "argument", "summary"],
+        "contentShapes": ["single-message"],
+        "density": "speaker-led",
+        "preferredItems": { "min": 0, "max": 0 },
+        "styleTreatment": "editorial-manifesto",
+        "prototypeSlide": "point-of-view"
+      },
+      "agenda": {
+        "narrativeRoles": ["orientation", "structure"],
+        "contentShapes": ["structured-list"],
+        "density": "balanced",
+        "preferredItems": { "min": 3, "max": 4 },
+        "styleTreatment": "structured-roadmap",
+        "prototypeSlide": "framework"
+      },
+      "metric": {
+        "narrativeRoles": ["evidence"],
+        "contentShapes": ["quantitative-evidence"],
+        "density": "balanced",
+        "preferredItems": { "min": 2, "max": 3 },
+        "styleTreatment": "quantitative-proof",
+        "prototypeSlide": "metrics"
+      },
+      "comparison": {
+        "narrativeRoles": ["argument", "evidence"],
+        "contentShapes": ["parallel-comparison"],
+        "density": "balanced",
+        "preferredItems": { "min": 2, "max": 2 },
+        "styleTreatment": "asymmetric-contrast",
+        "prototypeSlide": "comparison"
+      },
+      "process": {
+        "narrativeRoles": ["explanation", "execution"],
+        "contentShapes": ["sequence"],
+        "density": "balanced",
+        "preferredItems": { "min": 3, "max": 5 },
+        "styleTreatment": "connected-workflow",
+        "prototypeSlide": "workflow"
+      },
+      "decision-matrix": {
+        "narrativeRoles": ["decision"],
+        "contentShapes": ["two-axis-prioritization"],
+        "density": "balanced",
+        "preferredItems": { "min": 4, "max": 4 },
+        "styleTreatment": "quadrant-prioritization",
+        "prototypeSlide": "decision-matrix"
+      },
+      "closing": {
+        "narrativeRoles": ["closing", "action"],
+        "contentShapes": ["call-to-action"],
+        "density": "speaker-led",
+        "preferredItems": { "min": 0, "max": 0 },
+        "styleTreatment": "yellow-call-to-action",
+        "prototypeSlide": "closing"
+      }
+    }
+  },
+  "layouts": {
+    "cover": {
+      "supportedCommands": ["set-text"],
+      "itemClass": null,
+      "minItems": 0,
+      "maxItems": 0,
+      "coupled": ["headline-fit", "subtitle-fit", "footer"],
+      "adaptation": "Keep the two-part headline composition and rebalance copy width when line count changes."
+    },
+    "statement": {
+      "supportedCommands": ["set-text"],
+      "itemClass": null,
+      "minItems": 0,
+      "maxItems": 0,
+      "coupled": ["headline-fit", "supporting-copy-balance"],
+      "adaptation": "Keep the statement dominant and balance the two supporting columns."
+    },
+    "agenda": {
+      "supportedCommands": ["set-text", "add-item", "remove-item"],
+      "itemClass": "agenda-row",
+      "minItems": 2,
+      "maxItems": 5,
+      "coupled": ["grid", "gap", "numbering", "text-space"],
+      "adaptation": "Redistribute row height, renumber sequentially, and shorten copy as item count increases."
+    },
+    "metric": {
+      "supportedCommands": ["set-text"],
+      "itemClass": "bar-row",
+      "minItems": 1,
+      "maxItems": 4,
+      "coupled": ["scale", "bar-width", "axis", "data-label", "source-note"],
+      "adaptation": "Recalculate every bar against one explicit scale and keep the methodology note visible."
+    },
+    "comparison": {
+      "supportedCommands": ["set-text"],
+      "itemClass": "comparison-col",
+      "minItems": 2,
+      "maxItems": 3,
+      "coupled": ["columns", "gap", "dimension-alignment", "text-space"],
+      "adaptation": "Keep dimensions aligned across columns and redistribute widths evenly."
+    },
+    "process": {
+      "supportedCommands": ["set-text", "add-item", "remove-item"],
+      "itemClass": "step",
+      "minItems": 2,
+      "maxItems": 6,
+      "coupled": ["columns", "gap", "connector", "numbering", "text-space"],
+      "adaptation": "Recalculate equal columns, connector endpoints, sequential numbering, and copy width together."
+    },
+    "decision-matrix": {
+      "supportedCommands": ["set-text"],
+      "itemClass": "quadrant",
+      "minItems": 4,
+      "maxItems": 4,
+      "coupled": ["quadrants", "axis-labels", "selected-state"],
+      "adaptation": "Preserve four quadrants and both axis meanings; change labels rather than quadrant count."
+    },
+    "closing": {
+      "supportedCommands": ["set-text"],
+      "itemClass": null,
+      "minItems": 0,
+      "maxItems": 0,
+      "coupled": ["headline-fit", "next-action", "footer"],
+      "adaptation": "Keep one conclusion and one next action with enough breathing room."
+    }
+  }
+}

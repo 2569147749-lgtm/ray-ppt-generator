@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 1,
+  "template": "neo-grid-bold",
+  "deckCommands": ["add-slide", "delete-slide", "move-slide", "split-slide"],
+  "semanticCommands": ["replace-image"],
+  "imageAdaptation": {
+    "defaultFit": "cover",
+    "supportedFits": ["contain", "cover"],
+    "layoutRole": "media-layout",
+    "frameClass": "photo",
+    "copyClass": "copy",
+    "variants": {
+      "portrait": { "maxAspectRatio": 0.9, "mediaColumns": "5fr 7fr" },
+      "square": { "maxAspectRatio": 1.15, "mediaColumns": "1fr 1fr" },
+      "landscape-standard": { "maxAspectRatio": 1.5, "mediaColumns": "7fr 5fr" },
+      "landscape-wide": { "maxAspectRatio": null, "mediaColumns": "8fr 4fr" }
+    }
+  },
+  "styleConsistency": {
+    "allowedFontFamilies": ["Space Grotesk", "JetBrains Mono", "Noto Sans SC"],
+    "typographyByRole": {
+      "title": {
+        "fontFamilies": ["Space Grotesk", "Noto Sans SC"],
+        "fontWeights": [700, 900]
+      },
+      "item-title": {
+        "fontFamilies": ["Space Grotesk", "Noto Sans SC"],
+        "fontWeights": [700, 900]
+      },
+      "item-body": {
+        "fontFamilies": ["Space Grotesk", "Noto Sans SC"],
+        "fontWeights": [400]
+      },
+      "metric": {
+        "fontFamilies": ["Space Grotesk", "Noto Sans SC"],
+        "fontWeights": [700, 900]
+      },
+      "label": {
+        "fontFamilies": ["JetBrains Mono", "Noto Sans SC"],
+        "fontWeights": [400, 500]
+      }
+    },
+    "allowedColors": ["#ecece8", "#f5f4ef", "#0a0a0a", "#e6ff3d", "#8a8a85"],
+    "slideInsets": {
+      "left": 40,
+      "right": 40,
+      "top": 40,
+      "bottom": 40,
+      "tolerance": 2
+    },
+    "footer": {
+      "required": true,
+      "left": 0,
+      "right": 0,
+      "bottom": 0,
+      "fontSize": 24,
+      "tolerance": 2
+    },
+    "titleByLayout": {
+      "cover": { "min": 88, "max": 132 },
+      "statement": { "min": 76, "max": 132 },
+      "agenda": { "min": 56, "max": 92 },
+      "metric": { "min": 76, "max": 240 },
+      "comparison": { "min": 44, "max": 88 },
+      "process": { "min": 26, "max": 56 },
+      "decision-matrix": { "min": 56, "max": 76 },
+      "closing": { "min": 88, "max": 124 }
+    },
+    "outlierExemptLayouts": ["cover", "metric", "statement", "closing"]
+  },
+  "typographyQuality": {
+    "default": {
+      "minFontSize": 14,
+      "minLineHeightRatio": 1,
+      "maxLines": 10,
+      "maxLineCharacters": 48,
+      "orphanMinCharacters": 2
+    },
+    "roleRules": {
+      "title": {
+        "minFontSize": 56,
+        "minLineHeightRatio": 0.9,
+        "maxLines": 5,
+        "maxLineCharacters": 24,
+        "orphanMinCharacters": 2
+      },
+      "item-title": {
+        "minFontSize": 24,
+        "minLineHeightRatio": 1,
+        "maxLines": 3,
+        "maxLineCharacters": 24,
+        "orphanMinCharacters": 2
+      },
+      "item-body": {
+        "minFontSize": 17,
+        "minLineHeightRatio": 1.35,
+        "maxLines": 6,
+        "maxLineCharacters": 34,
+        "orphanMinCharacters": 2
+      },
+      "metric": {
+        "minFontSize": 56,
+        "minLineHeightRatio": 0.85,
+        "maxLines": 1,
+        "maxLineCharacters": 8,
+        "orphanMinCharacters": 1
+      }
+    }
+  },
+  "imageQuality": {
+    "maxUpscaleWarning": 1,
+    "maxUpscaleBlocker": 1.5,
+    "maxAspectDistortion": 0.03,
+    "minCoverVisibleFraction": 0.65
+  },
+  "layoutQuality": {
+    "balance": {
+      "centerX": [0.08, 0.92],
+      "centerY": [0.08, 0.92],
+      "coverage": [0.28, 0.92],
+      "exemptLayouts": ["cover", "statement"]
+    },
+    "repeatedGroupsByLayout": {
+      "agenda": {
+        "orientation": "grid",
+        "gapTolerance": 10,
+        "crossAxisTolerance": 10
+      },
+      "comparison": {
+        "orientation": "horizontal",
+        "gapTolerance": 10,
+        "crossAxisTolerance": 10
+      },
+      "process": {
+        "orientation": "horizontal",
+        "gapTolerance": 10,
+        "crossAxisTolerance": 10
+      }
+    }
+  },
+  "chartQuality": {
+    "supportedTypes": ["bar", "line"],
+    "requiredTitle": true,
+    "requiredSource": true,
+    "requiredPointLabels": true,
+    "bar": {
+      "requireZeroBaseline": true,
+      "widthTolerance": 0.03,
+      "requireLabels": true
+    }
+  },
+  "semanticVisualQuality": {
+    "layoutRules": {
+      "cover": {
+        "allowedIntents": ["opening"],
+        "requiredSignals": ["text"],
+        "primaryRoles": ["title"]
+      },
+      "statement": {
+        "allowedIntents": ["key-message"],
+        "requiredSignals": ["text"],
+        "primaryRoles": ["title"]
+      },
+      "agenda": {
+        "allowedIntents": ["structure-overview"],
+        "requiredSignals": ["text", "items"],
+        "primaryRoles": ["title"]
+      },
+      "metric": {
+        "allowedIntents": ["quantitative-comparison"],
+        "requiredSignals": ["text", "number", "chart"],
+        "primaryRoles": ["metric", "title"]
+      },
+      "comparison": {
+        "allowedIntents": ["categorical-comparison"],
+        "requiredSignals": ["text", "items"],
+        "primaryRoles": ["title"]
+      },
+      "process": {
+        "allowedIntents": ["process"],
+        "requiredSignals": ["text", "items"],
+        "primaryRoles": ["title"]
+      },
+      "decision-matrix": {
+        "allowedIntents": ["prioritization"],
+        "requiredSignals": ["text", "items"],
+        "primaryRoles": ["title"]
+      },
+      "closing": {
+        "allowedIntents": ["call-to-action"],
+        "requiredSignals": ["text"],
+        "primaryRoles": ["title"]
+      }
+    }
+  },
+  "accessibilityQuality": {
+    "minContrastNormal": 4.5,
+    "minContrastLarge": 3,
+    "largeTextMin": 24,
+    "largeBoldTextMin": 18.66,
+    "minTextSize": 14,
+    "requireSlideLabel": true,
+    "requireImageAlt": true,
+    "requireRedundantColorLabels": true
+  },
+  "layoutSelection": {
+    "templateSlideIds": [
+      "cover",
+      "toc",
+      "stats",
+      "features",
+      "market-penetration",
+      "section-vision",
+      "client-voice",
+      "next-steps",
+      "findings-detail",
+      "retention-curve",
+      "process",
+      "comparison-matrix"
+    ],
+    "layouts": {
+      "cover": {
+        "narrativeRoles": ["opening"],
+        "contentShapes": ["single-message"],
+        "density": "speaker-led",
+        "preferredItems": { "min": 0, "max": 0 },
+        "styleTreatment": "neo-grid-cover",
+        "prototypeSlide": "cover"
+      },
+      "statement": {
+        "narrativeRoles": ["context", "argument", "summary"],
+        "contentShapes": ["single-message"],
+        "density": "dense",
+        "preferredItems": { "min": 0, "max": 0 },
+        "styleTreatment": "section-divider",
+        "prototypeSlide": "section-vision"
+      },
+      "agenda": {
+        "narrativeRoles": ["orientation", "structure"],
+        "contentShapes": ["structured-list"],
+        "density": "dense",
+        "preferredItems": { "min": 3, "max": 6 },
+        "styleTreatment": "dense-grid-agenda",
+        "prototypeSlide": "toc"
+      },
+      "metric": {
+        "narrativeRoles": ["evidence"],
+        "contentShapes": ["quantitative-evidence"],
+        "density": "dense",
+        "preferredItems": { "min": 2, "max": 4 },
+        "styleTreatment": "stat-wall",
+        "prototypeSlide": "stats"
+      },
+      "comparison": {
+        "narrativeRoles": ["argument", "evidence"],
+        "contentShapes": ["parallel-comparison"],
+        "density": "dense",
+        "preferredItems": { "min": 2, "max": 3 },
+        "styleTreatment": "three-panel-feature-grid",
+        "prototypeSlide": "features"
+      },
+      "process": {
+        "narrativeRoles": ["explanation", "execution"],
+        "contentShapes": ["sequence"],
+        "density": "dense",
+        "preferredItems": { "min": 3, "max": 6 },
+        "styleTreatment": "six-step-strip",
+        "prototypeSlide": "process"
+      },
+      "decision-matrix": {
+        "narrativeRoles": ["decision"],
+        "contentShapes": ["two-axis-prioritization"],
+        "density": "dense",
+        "preferredItems": { "min": 4, "max": 4 },
+        "styleTreatment": "scored-matrix",
+        "prototypeSlide": "comparison-matrix"
+      },
+      "closing": {
+        "narrativeRoles": ["closing", "action"],
+        "contentShapes": ["call-to-action"],
+        "density": "speaker-led",
+        "preferredItems": { "min": 0, "max": 0 },
+        "styleTreatment": "block-cta",
+        "prototypeSlide": "next-steps"
+      }
+    }
+  },
+  "layouts": {
+    "cover": {
+      "supportedCommands": ["set-text", "replace-image"],
+      "itemClass": null,
+      "minItems": 0,
+      "maxItems": 0,
+      "coupled": ["grid-spans", "headline-fit", "photo-panels", "page-number"],
+      "adaptation": "Keep the asymmetric photo and lemon title panels; rebalance line breaks inside the lower title tile."
+    },
+    "statement": {
+      "supportedCommands": ["set-text"],
+      "itemClass": null,
+      "minItems": 0,
+      "maxItems": 0,
+      "coupled": ["grid-spans", "display-scale", "lemon-emphasis", "page-number"],
+      "adaptation": "Keep one dominant statement panel and preserve the lemon emphasis as a short phrase, not a full sentence."
+    },
+    "agenda": {
+      "supportedCommands": ["set-text", "add-item", "remove-item"],
+      "itemClass": "agenda-row",
+      "minItems": 2,
+      "maxItems": 6,
+      "coupled": ["grid", "row-count", "panel-fill-sequence", "numbering", "text-space"],
+      "adaptation": "Redistribute the 3-by-2 item grid, keep row numbers sequential, and reserve one to two lemon or ink signal panels."
+    },
+    "metric": {
+      "supportedCommands": ["set-text"],
+      "itemClass": "bar-row",
+      "minItems": 0,
+      "maxItems": 6,
+      "coupled": ["scale", "bar-heights", "axis", "legend", "source-note"],
+      "adaptation": "Recompute each stat or chart mark from a single explicit scale and keep source/context labels visible."
+    },
+    "comparison": {
+      "supportedCommands": ["set-text", "add-item", "remove-item"],
+      "itemClass": "comparison-col",
+      "minItems": 0,
+      "maxItems": 3,
+      "coupled": ["columns", "gap", "panel-color-rhythm", "text-space"],
+      "adaptation": "Keep three equal columns when possible; if reducing to two, widen both columns and preserve the accent panel."
+    },
+    "process": {
+      "supportedCommands": ["set-text", "add-item", "remove-item"],
+      "itemClass": "step",
+      "minItems": 2,
+      "maxItems": 6,
+      "coupled": ["columns", "connector", "numbering", "timeline", "text-space"],
+      "adaptation": "Recalculate equal-width node spans, connector arrows, sequential labels, and the bottom timeline together."
+    },
+    "decision-matrix": {
+      "supportedCommands": ["set-text"],
+      "itemClass": "quadrant",
+      "minItems": 0,
+      "maxItems": 4,
+      "coupled": ["table-columns", "row-labels", "state-pills", "source-note"],
+      "adaptation": "Preserve the scored matrix structure and canonical yellow, outlined, and ink state pills."
+    },
+    "closing": {
+      "supportedCommands": ["set-text"],
+      "itemClass": null,
+      "minItems": 0,
+      "maxItems": 0,
+      "coupled": ["headline-fit", "action-steps", "qr-panel", "page-number"],
+      "adaptation": "Keep the lemon headline block and three action tiles; shorten copy before reducing visual density."
+    }
+  }
+}

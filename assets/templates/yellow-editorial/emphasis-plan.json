@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-17T00:00:00.000Z",
+  "status": "passed",
+  "decisions": [
+    {
+      "id": "point-of-view-core-problem",
+      "slide": "point-of-view",
+      "role": "title",
+      "text": "具体的问题。",
+      "category": "core-conclusion",
+      "rationale": "This phrase completes the slide's central claim by naming the condition that makes innovation valuable.",
+      "source": "inferred",
+      "priority": "primary",
+      "treatments": [
+        "bold",
+        "highlight"
+      ]
+    },
+    {
+      "id": "workflow-continuous-calibration",
+      "slide": "workflow",
+      "role": "feedback-loop",
+      "text": "持续校准",
+      "category": "decision-action",
+      "rationale": "This phrase names the continuing action that closes the workflow feedback loop.",
+      "source": "inferred",
+      "priority": "secondary",
+      "treatments": [
+        "highlight"
+      ]
+    }
+  ],
+  "review": {
+    "reviewer": "template semantic review",
+    "reviewedAt": "2026-09-17T00:00:00.000Z",
+    "decisions": [
+      {
+        "id": "point-of-view-core-problem",
+        "checks": {
+          "relevance": "pass",
+          "context": "pass",
+          "restraint": "pass"
+        },
+        "notes": "The phrase is the conclusion of the statement, remains meaningful in context, and limits emphasis to one short span."
+      },
+      {
+        "id": "workflow-continuous-calibration",
+        "checks": {
+          "relevance": "pass",
+          "context": "pass",
+          "restraint": "pass"
+        },
+        "notes": "The short phrase identifies the action that turns a linear workflow into a feedback loop."
+      }
+    ]
+  }
+}

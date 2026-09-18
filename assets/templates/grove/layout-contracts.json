@@ -1,0 +1,644 @@
+{
+  "schemaVersion": 1,
+  "template": "grove",
+  "deckCommands": [
+    "add-slide",
+    "delete-slide",
+    "move-slide",
+    "split-slide"
+  ],
+  "semanticCommands": [],
+  "imageAdaptation": {
+    "defaultFit": "contain",
+    "supportedFits": [
+      "contain",
+      "cover"
+    ],
+    "layoutRole": "media-layout",
+    "frameClass": "media-frame",
+    "copyClass": "media-copy",
+    "variants": {
+      "portrait": {
+        "maxAspectRatio": 0.9,
+        "mediaColumns": "1fr 1fr"
+      },
+      "square": {
+        "maxAspectRatio": 1.15,
+        "mediaColumns": "1fr 1fr"
+      },
+      "landscape-standard": {
+        "maxAspectRatio": 1.5,
+        "mediaColumns": "1fr 1fr"
+      },
+      "landscape-wide": {
+        "maxAspectRatio": null,
+        "mediaColumns": "1fr 1fr"
+      }
+    }
+  },
+  "styleConsistency": {
+    "allowedFontFamilies": [
+      "Playfair Display",
+      "Jost",
+      "JetBrains Mono",
+      "Noto Serif SC",
+      "Noto Sans SC"
+    ],
+    "typographyByRole": {
+      "title": {
+        "fontFamilies": [
+          "Playfair Display",
+          "Jost"
+        ],
+        "fontWeights": [
+          400,
+          500,
+          600,
+          700,
+          800,
+          900
+        ]
+      },
+      "item-title": {
+        "fontFamilies": [
+          "Playfair Display",
+          "Jost"
+        ],
+        "fontWeights": [
+          400,
+          500,
+          600,
+          700,
+          800,
+          900
+        ]
+      },
+      "item-body": {
+        "fontFamilies": [
+          "Noto Sans SC"
+        ],
+        "fontWeights": [
+          300,
+          400,
+          500,
+          600
+        ]
+      },
+      "metric": {
+        "fontFamilies": [
+          "Playfair Display",
+          "Jost"
+        ],
+        "fontWeights": [
+          400,
+          500,
+          600,
+          700,
+          800,
+          900
+        ]
+      },
+      "label": {
+        "fontFamilies": [
+          "Playfair Display",
+          "Jost",
+          "JetBrains Mono",
+          "Noto Serif SC",
+          "Noto Sans SC"
+        ],
+        "fontWeights": [
+          300,
+          400,
+          500,
+          600,
+          700
+        ]
+      }
+    },
+    "allowedColors": [
+      "#192b1b",
+      "#1e3221",
+      "#d4cfbf",
+      "#c8524a",
+      "#e8e4d6"
+    ],
+    "slideInsets": {
+      "left": 40,
+      "right": 40,
+      "top": 40,
+      "bottom": 40,
+      "tolerance": 20
+    },
+    "footer": {
+      "required": false,
+      "left": 0,
+      "right": 0,
+      "bottom": 0,
+      "fontSize": 12,
+      "tolerance": 20
+    },
+    "titleByLayout": {
+      "cover": {
+        "min": 24,
+        "max": 260
+      },
+      "statement": {
+        "min": 24,
+        "max": 260
+      },
+      "agenda": {
+        "min": 24,
+        "max": 260
+      },
+      "metric": {
+        "min": 24,
+        "max": 260
+      },
+      "comparison": {
+        "min": 24,
+        "max": 260
+      },
+      "process": {
+        "min": 24,
+        "max": 260
+      },
+      "decision-matrix": {
+        "min": 24,
+        "max": 260
+      },
+      "closing": {
+        "min": 24,
+        "max": 260
+      }
+    },
+    "outlierExemptLayouts": [
+      "cover",
+      "statement",
+      "agenda",
+      "metric",
+      "comparison",
+      "process",
+      "decision-matrix",
+      "closing"
+    ]
+  },
+  "typographyQuality": {
+    "default": {
+      "minFontSize": 10,
+      "minLineHeightRatio": 0.8,
+      "maxLines": 14,
+      "maxLineCharacters": 80,
+      "orphanMinCharacters": 1
+    },
+    "roleRules": {
+      "title": {
+        "minFontSize": 18,
+        "minLineHeightRatio": 0.8,
+        "maxLines": 8,
+        "maxLineCharacters": 48,
+        "orphanMinCharacters": 1
+      },
+      "item-title": {
+        "minFontSize": 12,
+        "minLineHeightRatio": 0.9,
+        "maxLines": 5,
+        "maxLineCharacters": 42,
+        "orphanMinCharacters": 1
+      },
+      "item-body": {
+        "minFontSize": 10,
+        "minLineHeightRatio": 1,
+        "maxLines": 10,
+        "maxLineCharacters": 80,
+        "orphanMinCharacters": 1
+      },
+      "metric": {
+        "minFontSize": 18,
+        "minLineHeightRatio": 0.75,
+        "maxLines": 3,
+        "maxLineCharacters": 18,
+        "orphanMinCharacters": 1
+      }
+    }
+  },
+  "imageQuality": {
+    "maxUpscaleWarning": 1,
+    "maxUpscaleBlocker": 1.5,
+    "maxAspectDistortion": 0.03,
+    "minCoverVisibleFraction": 0.6
+  },
+  "layoutQuality": {
+    "balance": {
+      "centerX": [
+        0.03,
+        0.97
+      ],
+      "centerY": [
+        0.03,
+        0.97
+      ],
+      "coverage": [
+        0.05,
+        0.98
+      ],
+      "exemptLayouts": [
+        "cover",
+        "statement",
+        "agenda",
+        "metric",
+        "comparison",
+        "process",
+        "decision-matrix",
+        "closing"
+      ]
+    },
+    "repeatedGroupsByLayout": {}
+  },
+  "chartQuality": {
+    "supportedTypes": [
+      "bar",
+      "line",
+      "pie"
+    ],
+    "requiredTitle": true,
+    "requiredSource": false,
+    "requiredPointLabels": false,
+    "bar": {
+      "requireZeroBaseline": true,
+      "widthTolerance": 0.05,
+      "requireLabels": false
+    }
+  },
+  "semanticVisualQuality": {
+    "layoutRules": {
+      "cover": {
+        "allowedIntents": [
+          "opening"
+        ],
+        "requiredSignals": [
+          "text"
+        ],
+        "primaryRoles": [
+          "title"
+        ]
+      },
+      "statement": {
+        "allowedIntents": [
+          "key-message"
+        ],
+        "requiredSignals": [
+          "text"
+        ],
+        "primaryRoles": [
+          "title"
+        ]
+      },
+      "agenda": {
+        "allowedIntents": [
+          "structure-overview"
+        ],
+        "requiredSignals": [
+          "text",
+          "items"
+        ],
+        "primaryRoles": [
+          "title"
+        ]
+      },
+      "metric": {
+        "allowedIntents": [
+          "quantitative-comparison"
+        ],
+        "requiredSignals": [
+          "text",
+          "number",
+          "chart"
+        ],
+        "primaryRoles": [
+          "metric",
+          "title"
+        ]
+      },
+      "comparison": {
+        "allowedIntents": [
+          "categorical-comparison"
+        ],
+        "requiredSignals": [
+          "text",
+          "items"
+        ],
+        "primaryRoles": [
+          "title"
+        ]
+      },
+      "process": {
+        "allowedIntents": [
+          "process"
+        ],
+        "requiredSignals": [
+          "text",
+          "items"
+        ],
+        "primaryRoles": [
+          "title"
+        ]
+      },
+      "decision-matrix": {
+        "allowedIntents": [
+          "prioritization"
+        ],
+        "requiredSignals": [
+          "text",
+          "items"
+        ],
+        "primaryRoles": [
+          "title"
+        ]
+      },
+      "closing": {
+        "allowedIntents": [
+          "call-to-action"
+        ],
+        "requiredSignals": [
+          "text"
+        ],
+        "primaryRoles": [
+          "title"
+        ]
+      }
+    }
+  },
+  "accessibilityQuality": {
+    "minContrastNormal": 3,
+    "minContrastLarge": 2,
+    "largeTextMin": 24,
+    "largeBoldTextMin": 18.66,
+    "minTextSize": 10,
+    "requireSlideLabel": true,
+    "requireImageAlt": true,
+    "requireRedundantColorLabels": true
+  },
+  "layoutSelection": {
+    "templateSlideIds": [
+      "slide-1",
+      "slide-2",
+      "slide-3",
+      "slide-4",
+      "slide-5",
+      "slide-6",
+      "slide-7",
+      "slide-8",
+      "slide-9",
+      "slide-10",
+      "slide-11",
+      "slide-12"
+    ],
+    "layouts": {
+      "cover": {
+        "narrativeRoles": [
+          "opening"
+        ],
+        "contentShapes": [
+          "single-message"
+        ],
+        "density": "speaker-led",
+        "preferredItems": {
+          "min": 0,
+          "max": 0
+        },
+        "styleTreatment": "cover-prototype",
+        "prototypeSlide": "slide-1"
+      },
+      "statement": {
+        "narrativeRoles": [
+          "context",
+          "argument",
+          "summary"
+        ],
+        "contentShapes": [
+          "single-message"
+        ],
+        "density": "balanced",
+        "preferredItems": {
+          "min": 0,
+          "max": 0
+        },
+        "styleTreatment": "statement-prototype",
+        "prototypeSlide": "slide-2"
+      },
+      "agenda": {
+        "narrativeRoles": [
+          "orientation",
+          "structure"
+        ],
+        "contentShapes": [
+          "structured-list"
+        ],
+        "density": "balanced",
+        "preferredItems": {
+          "min": 3,
+          "max": 6
+        },
+        "styleTreatment": "agenda-prototype",
+        "prototypeSlide": "slide-2"
+      },
+      "metric": {
+        "narrativeRoles": [
+          "evidence"
+        ],
+        "contentShapes": [
+          "quantitative-evidence"
+        ],
+        "density": "balanced",
+        "preferredItems": {
+          "min": 1,
+          "max": 6
+        },
+        "styleTreatment": "metric-prototype",
+        "prototypeSlide": "slide-3"
+      },
+      "comparison": {
+        "narrativeRoles": [
+          "argument",
+          "evidence"
+        ],
+        "contentShapes": [
+          "parallel-comparison"
+        ],
+        "density": "balanced",
+        "preferredItems": {
+          "min": 2,
+          "max": 4
+        },
+        "styleTreatment": "comparison-prototype",
+        "prototypeSlide": "slide-4"
+      },
+      "process": {
+        "narrativeRoles": [
+          "explanation",
+          "execution"
+        ],
+        "contentShapes": [
+          "sequence"
+        ],
+        "density": "balanced",
+        "preferredItems": {
+          "min": 3,
+          "max": 6
+        },
+        "styleTreatment": "process-prototype",
+        "prototypeSlide": "slide-6"
+      },
+      "decision-matrix": {
+        "narrativeRoles": [
+          "decision"
+        ],
+        "contentShapes": [
+          "two-axis-prioritization"
+        ],
+        "density": "balanced",
+        "preferredItems": {
+          "min": 4,
+          "max": 4
+        },
+        "styleTreatment": "decision-matrix-prototype",
+        "prototypeSlide": "slide-7"
+      },
+      "closing": {
+        "narrativeRoles": [
+          "closing",
+          "action"
+        ],
+        "contentShapes": [
+          "call-to-action"
+        ],
+        "density": "speaker-led",
+        "preferredItems": {
+          "min": 0,
+          "max": 0
+        },
+        "styleTreatment": "closing-prototype",
+        "prototypeSlide": "slide-12"
+      }
+    }
+  },
+  "layouts": {
+    "cover": {
+      "supportedCommands": [
+        "set-text"
+      ],
+      "itemClass": null,
+      "minItems": 0,
+      "maxItems": 8,
+      "coupled": [
+        "prototype-slide",
+        "text-fit",
+        "layout-rhythm"
+      ],
+      "adaptation": "Use the declared prototype slide as the visual source and keep structural edits at the slide level unless a template-specific DOM contract is added."
+    },
+    "statement": {
+      "supportedCommands": [
+        "set-text"
+      ],
+      "itemClass": null,
+      "minItems": 0,
+      "maxItems": 8,
+      "coupled": [
+        "prototype-slide",
+        "text-fit",
+        "layout-rhythm"
+      ],
+      "adaptation": "Use the declared prototype slide as the visual source and keep structural edits at the slide level unless a template-specific DOM contract is added."
+    },
+    "agenda": {
+      "supportedCommands": [
+        "set-text"
+      ],
+      "itemClass": null,
+      "minItems": 0,
+      "maxItems": 8,
+      "coupled": [
+        "prototype-slide",
+        "text-fit",
+        "layout-rhythm"
+      ],
+      "adaptation": "Use the declared prototype slide as the visual source and keep structural edits at the slide level unless a template-specific DOM contract is added."
+    },
+    "metric": {
+      "supportedCommands": [
+        "set-text"
+      ],
+      "itemClass": null,
+      "minItems": 0,
+      "maxItems": 8,
+      "coupled": [
+        "prototype-slide",
+        "text-fit",
+        "layout-rhythm"
+      ],
+      "adaptation": "Use the declared prototype slide as the visual source and keep structural edits at the slide level unless a template-specific DOM contract is added."
+    },
+    "comparison": {
+      "supportedCommands": [
+        "set-text"
+      ],
+      "itemClass": null,
+      "minItems": 0,
+      "maxItems": 8,
+      "coupled": [
+        "prototype-slide",
+        "text-fit",
+        "layout-rhythm"
+      ],
+      "adaptation": "Use the declared prototype slide as the visual source and keep structural edits at the slide level unless a template-specific DOM contract is added."
+    },
+    "process": {
+      "supportedCommands": [
+        "set-text"
+      ],
+      "itemClass": null,
+      "minItems": 0,
+      "maxItems": 8,
+      "coupled": [
+        "prototype-slide",
+        "text-fit",
+        "layout-rhythm"
+      ],
+      "adaptation": "Use the declared prototype slide as the visual source and keep structural edits at the slide level unless a template-specific DOM contract is added."
+    },
+    "decision-matrix": {
+      "supportedCommands": [
+        "set-text"
+      ],
+      "itemClass": null,
+      "minItems": 0,
+      "maxItems": 4,
+      "coupled": [
+        "prototype-slide",
+        "text-fit",
+        "layout-rhythm"
+      ],
+      "adaptation": "Use the declared prototype slide as the visual source and keep structural edits at the slide level unless a template-specific DOM contract is added."
+    },
+    "closing": {
+      "supportedCommands": [
+        "set-text"
+      ],
+      "itemClass": null,
+      "minItems": 0,
+      "maxItems": 8,
+      "coupled": [
+        "prototype-slide",
+        "text-fit",
+        "layout-rhythm"
+      ],
+      "adaptation": "Use the declared prototype slide as the visual source and keep structural edits at the slide level unless a template-specific DOM contract is added."
+    }
+  },
+  "promotion": {
+    "source": "beautiful-html-templates",
+    "generatedAt": "2026-09-18T00:00:00.000Z",
+    "note": "Generated conservatively from bundled template metadata. Layout mutation is limited to slide-level planning until a template-specific DOM contract is authored."
+  }
+}
