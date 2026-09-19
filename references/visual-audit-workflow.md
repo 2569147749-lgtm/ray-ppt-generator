@@ -65,12 +65,16 @@ node scripts/resolve-visual-runtime.mjs \
 The local stage searches system and user application directories, executable
 search paths, macOS Spotlight bundle metadata, Windows App Paths registry
 entries, and Linux package locations. Every candidate must report a supported
-Chromium version and complete a real isolated headless CDP launch. The result
-records each candidate, source, probe, and failed discovery source. `partial`
-coverage means the search was incomplete; it does not mean Chromium is absent.
-Even complete supported-source coverage does not prove that no portable browser
-exists in an arbitrary directory. Preserve the `not-found-in-supported-sources`
-wording and accept an explicit path before moving to later fallbacks.
+Chromium version and complete a real isolated headless CDP command. Prefer CDP
+Pipe because it does not require a localhost listener. If Pipe is unavailable,
+restart the browser with CDP WebSocket and verify that route with
+`Browser.getVersion`; observing a DevTools endpoint alone is not success. The
+result records the selected `cdpTransport`, each candidate, source, probe, and
+failed discovery source. `partial` coverage means the search was incomplete; it
+does not mean Chromium is absent. Even complete supported-source coverage does
+not prove that no portable browser exists in an arbitrary directory. Preserve
+the `not-found-in-supported-sources` wording and accept an explicit path before
+moving to later fallbacks.
 
 If local resolution is unavailable, follow this order without skipping a step:
 

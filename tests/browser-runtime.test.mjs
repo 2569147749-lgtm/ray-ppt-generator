@@ -450,6 +450,7 @@ test("browser runtime resolution reuses a verified runtime cache before system d
         return {
           usable: true,
           cdp: true,
+          cdpTransport: "pipe",
           product: "Google Chrome",
           version: "146.0.7680.80",
           major: 146
@@ -464,6 +465,7 @@ test("browser runtime resolution reuses a verified runtime cache before system d
     assert.equal(result.source, "runtime-cache");
     assert.equal(result.executablePath, command);
     assert.equal(result.version, "146.0.7680.80");
+    assert.equal(result.cdpTransport, "pipe");
   } finally {
     await rm(root, { recursive: true, force: true });
   }

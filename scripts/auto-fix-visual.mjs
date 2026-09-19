@@ -341,6 +341,7 @@ async function main() {
     executablePath: browser.executablePath,
     product: browser.product ?? null,
     version: browser.version ?? browser.spec?.version ?? null,
+    cdpTransport: browser.cdpTransport ?? null,
     platform: browser.spec?.platform ?? process.platform,
     discovery: browser.discovery ?? null
   };
