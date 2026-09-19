@@ -3,6 +3,7 @@ import { existsSync } from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import {
+  buildBrowserLaunchOptions,
   discoverSystemBrowserCandidates,
   parseBrowserVersion,
   probeBrowserCandidate,
@@ -29,6 +30,49 @@ function commandRunner(
     return responses.get(key) ?? fallback;
   };
 }
+
+test("macOS browser launches isolate user services inside the temporary profile", () => {
+  const profile = "/tmp/ray-ppt-profile";
+  const options = buildBrowserLaunchOptions({
+    platform: "darwin",
+    profile,
+    args: ["--headless=new", "about:blank"],
+    env: {
+      PATH: "/usr/bin",
+      CFFIXED_USER_HOME: "/Users/example"
+    }
+  });
+
+  assert.deepEqual(options.args, [
+    "--headless=new",
+    "--disable-breakpad",
+    "--noerrdialogs",
+    "about:blank"
+  ]);
+  assert.equal(options.spawnOptions.env.PATH, "/usr/bin");
+  assert.equal(options.spawnOptions.env.CFFIXED_USER_HOME, profile);
+});
+
+test("Windows browser launches suppress crash reporting without replacing its environment", () => {
+  const env = {
+    PATH: "C:\\Windows\\System32",
+    LOCALAPPDATA: "C:\\Users\\example\\AppData\\Local"
+  };
+  const options = buildBrowserLaunchOptions({
+    platform: "win32",
+    profile: "C:\\Temp\\ray-ppt-profile",
+    args: ["--headless=new", "about:blank"],
+    env
+  });
+
+  assert.deepEqual(options.args, [
+    "--headless=new",
+    "--disable-breakpad",
+    "--noerrdialogs",
+    "about:blank"
+  ]);
+  assert.equal(options.spawnOptions.env, env);
+});
 
 test("macOS discovery combines standard, user, PATH, and Spotlight candidates", () => {
   const home = "/Users/example";
