@@ -334,6 +334,28 @@ test("browser probe requires a recognized modern version and working CDP", async
   assert.equal(usable.version, "146.0.0.0");
 });
 
+test("browser probe allows a ten-second default startup window", async () => {
+  let observedTimeout = null;
+  const result = await probeBrowserCandidate(
+    {
+      command: "/browser",
+      argsPrefix: [],
+      product: "Chromium",
+      source: "test"
+    },
+    {
+      readVersion: async () => "Chromium 146.0.0.0",
+      probeCdp: async (_candidate, options) => {
+        observedTimeout = options.timeoutMs;
+        return { endpoint: "ws://127.0.0.1/devtools/browser/test" };
+      }
+    }
+  );
+
+  assert.equal(result.usable, true);
+  assert.equal(observedTimeout, 10000);
+});
+
 test("real system Chrome passes a bounded CDP launch probe", async (context) => {
   if (process.platform !== "darwin") return context.skip("macOS integration fixture");
   const command =
