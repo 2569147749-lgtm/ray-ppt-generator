@@ -26,12 +26,25 @@ import {
 } from "../lib/visual-audit.mjs";
 import { analyzeFontContinuity } from "../lib/font-continuity.mjs";
 import { analyzeStyleConsistency } from "../lib/style-consistency.mjs";
+import { probeBrowserCandidate } from "../lib/system-browser-discovery.mjs";
 
 const skillRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const scripts = path.join(skillRoot, "scripts");
 const chromePath =
   process.env.CHROME_PATH ??
   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
+const chromeProbe = await probeBrowserCandidate(
+  {
+    command: chromePath,
+    argsPrefix: [],
+    product: "Chromium",
+    source: "visual-audit-test"
+  },
+  { timeoutMs: 5000 }
+);
+const browserTestOptions = {
+  skip: chromeProbe.usable ? false : chromeProbe.reason
+};
 
 test("visual audit defaults to the desktop presentation viewport only", () => {
   assert.deepEqual(VISUAL_VIEWPORTS, [
@@ -1236,7 +1249,7 @@ test("writing a deck modification invalidates a previously passed visual gate", 
 
 test(
   "visual audit blocks DOM geometry, crossing lines, and abnormal image stripes",
-  { skip: spawnSync(chromePath, ["--version"], { encoding: "utf8" }).status !== 0 },
+  browserTestOptions,
   () => {
     const root = mkdtempSync(path.join(os.tmpdir(), "ppt-visual-defects-test-"));
     const deck = path.join(root, "deck");
@@ -1319,7 +1332,7 @@ stage.style.transform='translate('+((innerWidth-1920*scale)/2)+'px,'+((innerHeig
 
 test(
   "visual audit blocks an unplanned visual change on a protected slide",
-  { skip: spawnSync(chromePath, ["--version"], { encoding: "utf8" }).status !== 0 },
+  browserTestOptions,
   () => {
     const root = mkdtempSync(path.join(os.tmpdir(), "ppt-visual-diff-test-"));
     const source = path.join(root, "source");
@@ -1395,7 +1408,7 @@ test(
 
 test(
   "visual audit allows planned changes when protected slides remain identical",
-  { skip: spawnSync(chromePath, ["--version"], { encoding: "utf8" }).status !== 0 },
+  browserTestOptions,
   () => {
     const root = mkdtempSync(path.join(os.tmpdir(), "ppt-visual-diff-clean-test-"));
     const source = path.join(root, "source");
@@ -1454,7 +1467,7 @@ test(
 
 test(
   "visual audit blocks unrequested font drift on a planned slide",
-  { skip: spawnSync(chromePath, ["--version"], { encoding: "utf8" }).status !== 0 },
+  browserTestOptions,
   () => {
     const { root, deck: source } = createDeck();
     const versionOutput = execFileSync(
@@ -1558,7 +1571,7 @@ test(
 
 test(
   "visual audit blocks a contracted runtime typography defect",
-  { skip: spawnSync(chromePath, ["--version"], { encoding: "utf8" }).status !== 0 },
+  browserTestOptions,
   () => {
     const { root, deck } = createDeck();
     const outputDir = path.join(root, "visual-audit");
@@ -1635,7 +1648,7 @@ test(
 
 test(
   "visual audit blocks misleading chart geometry and inaccessible contrast",
-  { skip: spawnSync(chromePath, ["--version"], { encoding: "utf8" }).status !== 0 },
+  browserTestOptions,
   () => {
     const { root, deck } = createDeck();
     const outputDir = path.join(root, "visual-audit");
@@ -1697,7 +1710,7 @@ test(
 
 test(
   "visual audit blocks an explicit cross-slide style contract violation",
-  { skip: spawnSync(chromePath, ["--version"], { encoding: "utf8" }).status !== 0 },
+  browserTestOptions,
   () => {
     const { root, deck } = createDeck();
     const outputDir = path.join(root, "visual-audit");
@@ -1757,7 +1770,7 @@ test(
 
 test(
   "visual audit renders selected desktop screenshots and requires review",
-  { skip: spawnSync(chromePath, ["--version"], { encoding: "utf8" }).status !== 0 },
+  browserTestOptions,
   () => {
     const { root, deck } = createDeck();
     const planPath = path.join(deck, "change-plan.json");
@@ -1897,7 +1910,7 @@ test(
 
 test(
   "visual review must cover every capture before the project gate passes",
-  { skip: spawnSync(chromePath, ["--version"], { encoding: "utf8" }).status !== 0 },
+  browserTestOptions,
   () => {
     const { root, deck } = createDeck();
     const outputDir = path.join(root, "visual-audit");

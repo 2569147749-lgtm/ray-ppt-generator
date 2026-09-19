@@ -19,16 +19,9 @@ import { inspectHtml } from "../lib/deck-model.mjs";
 
 const skillRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const templatesRoot = path.join(skillRoot, "assets", "templates");
-const beautifulLibraryRoot = path.resolve(
-  skillRoot,
-  "..",
-  "beautiful-html-templates",
-  "library"
-);
 const planScript = path.join(skillRoot, "scripts", "plan-deck.mjs");
 const newDeckScript = path.join(skillRoot, "scripts", "new-deck.mjs");
 const validateScript = path.join(skillRoot, "scripts", "validate-deck.mjs");
-const beautifulIndexPath = path.join(beautifulLibraryRoot, "index.json");
 const productionLayouts = [
   "cover",
   "statement",
@@ -61,11 +54,13 @@ function productionTemplates() {
 }
 
 function beautifulTemplates() {
-  return readJson(beautifulIndexPath).templates;
+  return productionTemplates()
+    .filter((template) => template.source === "beautiful-html-templates")
+    .map((template) => ({ ...template, slug: template.id }));
 }
 
 function sourceTemplateDir(slug) {
-  return path.join(beautifulLibraryRoot, "templates", slug);
+  return path.join(templatesRoot, slug);
 }
 
 function sourceRuntimeFiles(slug) {

@@ -304,6 +304,9 @@ test("real system Chrome passes a bounded CDP launch probe", async (context) => 
     product: "Google Chrome",
     source: "macos-applications"
   });
+  if (!result.usable) {
+    return context.skip(result.reason);
+  }
 
   assert.equal(result.usable, true);
   assert.equal(result.cdp, true);

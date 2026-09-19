@@ -13,6 +13,7 @@ import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { applyCommands } from "../lib/deck-dom.mjs";
 import { buildVisualRepairHandoff } from "../lib/visual-repair-handoff.mjs";
+import { probeBrowserCandidate } from "../lib/system-browser-discovery.mjs";
 import {
   fingerprintVisualFixCommands,
   planVisualAutoFix,
@@ -31,6 +32,18 @@ const templatePath = path.join(
 const chromePath =
   process.env.CHROME_PATH ??
   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
+const chromeProbe = await probeBrowserCandidate(
+  {
+    command: chromePath,
+    argsPrefix: [],
+    product: "Chromium",
+    source: "visual-auto-fix-test"
+  },
+  { timeoutMs: 5000 }
+);
+const browserTestOptions = {
+  skip: chromeProbe.usable ? false : chromeProbe.reason
+};
 
 function overflowFinding(overrides = {}) {
   return {
@@ -718,7 +731,7 @@ test("bounded visual repair loop records an apply failure", async () => {
 
 test(
   "visual auto-fix CLI repairs an opted-in overflow and publishes review evidence",
-  { skip: spawnSync(chromePath, ["--version"], { encoding: "utf8" }).status !== 0 },
+  browserTestOptions,
   () => {
     const { deck, plan } = createOverflowDeck({ autoFix: true });
     const result = spawnSync(
@@ -761,7 +774,7 @@ test(
 
 test(
   "visual auto-fix CLI retains failure evidence without changing the original deck",
-  { skip: spawnSync(chromePath, ["--version"], { encoding: "utf8" }).status !== 0 },
+  browserTestOptions,
   () => {
     const { deck, html, project, plan } = createOverflowDeck({ autoFix: false });
     const result = spawnSync(

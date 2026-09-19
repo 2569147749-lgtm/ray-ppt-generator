@@ -19,19 +19,14 @@ import {
 } from "../lib/beautiful-template-library.mjs";
 
 const skillRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const beautifulLibraryRoot = path.join(
-  skillRoot,
-  "..",
-  "beautiful-html-templates",
-  "library"
-);
+const beautifulLibraryRoot = path.join(skillRoot, "assets", "templates");
 const previewScript = path.join(
   skillRoot,
   "scripts",
   "preview-template-candidates.mjs"
 );
 
-test("loads the beautiful library as non-contract preview candidates", async () => {
+test("loads the bundled library as non-contract preview candidates", async () => {
   const candidates = await loadBeautifulTemplateCandidates({
     skillRoot,
     libraryRoot: beautifulLibraryRoot
@@ -106,7 +101,10 @@ test("title preview uses real brief text and omits third-party notices", async (
   assert.match(html, /从洞察生产到决策协同/);
   assert.doesNotMatch(html, /MIT License/);
   assert.doesNotMatch(html, /Copyright \(c\) 2026 Zara Zhang/);
-  assert.equal((html.match(/class=["'][^"']*\bslide\b[^"']*["']/g) ?? []).length, 1);
+  assert.equal(
+    (html.match(/<section\b[^>]*class=["'][^"']*\bslide\b[^"']*["']/g) ?? []).length,
+    1
+  );
 });
 
 test("preview CLI writes three personalized previews and a hidden notice", () => {
